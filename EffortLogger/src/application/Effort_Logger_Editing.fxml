@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EditorCtrl">
+   <children>
+      <HBox alignment="CENTER" prefWidth="960.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="346.0" prefWidth="580.0">
+               <children>
+                  <AnchorPane prefHeight="40.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="uid" contentDisplay="CENTER" prefHeight="60.0" prefWidth="200.0" text="ID: 0                                                      Username,                             Welcome First and Last Name" wrapText="true" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="580.0" text="Effort Log Editor" wrapText="true">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="600.0">
+                     <children>
+                        <Label contentDisplay="CENTER" prefHeight="27.0" prefWidth="322.0" text="1. Select the Project in order to edit its Effort Log." wrapText="true" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="278.0" text="2.a. Clear this Project's Effort Log." wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="580.0">
+                     <children>
+                        <BorderPane prefHeight="200.0" prefWidth="322.0">
+                           <center>
+                              <ComboBox prefHeight="27.0" prefWidth="322.0" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="278.0">
+                           <center>
+                              <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="189.0" text="Clear This Effort Log" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="200.0">
+                     <children>
+                        <Label contentDisplay="CENTER" prefHeight="20.0" prefWidth="580.0" text="2.b. Select the Effort Log Entry to be modified and make it the Current Effort Log Entry." wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="200.0">
+                     <children>
+                        <BorderPane prefHeight="35.0" prefWidth="322.0">
+                           <center>
+                              <ComboBox prefHeight="27.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="200.0">
+                     <children>
+                        <Label contentDisplay="CENTER" prefHeight="20.0" prefWidth="580.0" text="3.a. Modify the Current Effort Log Entry's attributes and press &quot;Update This Entry&quot; when finished." wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="580.0">
+                     <children>
+                        <BorderPane layoutX="139.0" layoutY="10.0" prefHeight="200.0" prefWidth="140.0">
+                           <center>
+                              <VBox prefHeight="43.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="25.0" prefWidth="40.0" text="Date:" wrapText="true">
+                                             <padding>
+                                                <Insets right="10.0" />
+                                             </padding>
+                                          </Label>
+                                          <TextField prefHeight="20.0" prefWidth="100.0" />
+                                       </children>
+                                    </HBox>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="27.0" prefWidth="350.0" text="yyyy-mm-dd" wrapText="true" />
+                                 </children>
+                              </VBox>
+                           </center>
+                        </BorderPane>
+                        <BorderPane layoutX="300.0" layoutY="10.0" prefHeight="200.0" prefWidth="160.0">
+                           <center>
+                              <VBox prefHeight="43.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="25.0" prefWidth="81.0" text="Start Time:" wrapText="true">
+                                             <padding>
+                                                <Insets right="10.0" />
+                                             </padding>
+                                          </Label>
+                                          <TextField prefHeight="25.0" prefWidth="100.0" />
+                                       </children>
+                                    </HBox>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="27.0" prefWidth="350.0" text="yyyy-mm-dd" wrapText="true" />
+                                 </children>
+                              </VBox>
+                           </center>
+                        </BorderPane>
+                        <BorderPane prefHeight="200.0" prefWidth="160.0">
+                           <center>
+                              <VBox prefHeight="43.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="25.0" prefWidth="81.0" text="Stop Time:" wrapText="true">
+                                             <padding>
+                                                <Insets right="10.0" />
+                                             </padding>
+                                          </Label>
+                                          <TextField prefHeight="25.0" prefWidth="100.0" />
+                                       </children>
+                                    </HBox>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="27.0" prefWidth="350.0" text="yyyy-mm-dd" wrapText="true" />
+                                 </children>
+                              </VBox>
+                           </center>
+                        </BorderPane>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="200.0">
+                     <children>
+                        <Label contentDisplay="CENTER" prefHeight="20.0" prefWidth="580.0" text="Life Cycle Step:" wrapText="true">
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox prefHeight="25.0" prefWidth="250.0" />
+                     </children>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="600.0" spacing="10.0">
+                     <children>
+                        <Label contentDisplay="CENTER" prefHeight="27.0" prefWidth="150.0" text="Effort Category:" wrapText="true" />
+                        <Label contentDisplay="CENTER" prefHeight="27.0" prefWidth="150.0" text="Plan:" wrapText="true" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="27.0" prefWidth="600.0" spacing="10.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                     <children>
+                        <ComboBox prefHeight="27.0" prefWidth="150.0" />
+                        <ComboBox prefHeight="27.0" prefWidth="322.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="580.0" text="3.b. Update the Current Effort Log Entry" wrapText="true" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="20.0" prefWidth="580.0" text="3.c. Delete the Current Effort Log Entry" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="200.0">
+                     <children>
+                        <BorderPane prefHeight="35.0" prefWidth="580.0">
+                           <center>
+                              <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="210.0" text="Update This Entry" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                        <BorderPane layoutX="10.0" layoutY="10.0" prefHeight="35.0" prefWidth="580.0">
+                           <center>
+                              <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="210.0" text="Delete This Entry" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="20.0" prefWidth="600.0">
+                     <children>
+                        <Label contentDisplay="CENTER" prefHeight="20.0" prefWidth="322.0" text="3.d. Split the Current Effort Log Entry into two entries" wrapText="true" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="278.0" text="4. Proceed to the Effort Log Console" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="580.0">
+                     <children>
+                        <BorderPane prefHeight="200.0" prefWidth="322.0">
+                           <center>
+                              <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="280.0" text="Split This Entry into Two Entries" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets right="32.0" />
+                                 </BorderPane.margin>
+                              </Button>
+                           </center>
+                        </BorderPane>
+                        <BorderPane layoutX="151.0" layoutY="10.0" prefHeight="200.0" prefWidth="278.0">
+                           <center>
+                              <Button mnemonicParsing="false" onAction="#gotoConsole" prefHeight="31.0" prefWidth="200.0" text="Proceed to the Effort Log Console" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
